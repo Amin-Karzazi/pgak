@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palette Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+      <div><img src="images/logo.png" alt="Logo AMIN KARZAZI" class="logo" /></div>
+
+        <h1>Palette Generator</h1>
+    </header>
+
+    <main>
+        <div class="palette">
+            <div class="icon-container">
+                <div class="icon day" title="Jour" onclick="changePalette('day')">☀️</div>
+                <div class="icon night" title="Nuit" onclick="changePalette('night')">🌙</div>
+            </div>
+            <button class="random-button" onclick="generateRandomPalette()">Generate Colors </button>
+            <div class="colors" id="colorPalette">
+                <!-- Palette de couleurs générée ici -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AMIN KARZAZI - All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

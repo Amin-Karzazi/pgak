@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fond sombre par défaut */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    background-color: #666666;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+}
+
+.logo {
+  width: clamp(5px, 6vw, 30px);
+  border-radius: 50%;
+  border: 2px solid #000000;
+  float: left; /* Ajoute cette ligne pour positionner le logo à gauche */
+  margin-right: 15px; /* Optionnel : ajoute un peu d'espace à droite du logo */
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.palette {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-container {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.random-button {
+    padding: 10px 20px;
+    background-color: #444;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.random-button:hover {
+    background-color: #666;
+}
+
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.color {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.color:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #666666;
+    text-align: center;
+    padding: 10px;
+    color: #bbb;
+}
